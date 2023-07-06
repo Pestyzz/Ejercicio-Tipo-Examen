@@ -1,6 +1,6 @@
 #Importamos la librería numpy para hacer uso del array requerido en la rúbrica.
 import numpy as np
-
+from datetime import date
 
 """ FUNCIONES DEL PROGRAMA """
 
@@ -132,7 +132,10 @@ def ver_compradores():
         print("------------")
     print("")
         
-    
+def salir():
+    print(f"Saliendo...\nBastián Ñiripil\n{date.today()}")
+    menu = 0
+    return
     
 """ PROGRAMA PRINCIPAL """
 menu = int(1)
@@ -157,3 +160,5 @@ while menu == 1:
             ver_compradores()
         case 4:
             mostrar_ventas()
+        case 5:
+            menu = salir()
