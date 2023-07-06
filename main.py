@@ -65,7 +65,7 @@ def comprar_dep():
     while True:
         print("Precios:\n-Tipo A: 3.800 UF\n-Tipo B: 3.000 UF\n-Tipo C: 2.800 UF\n-Tipo D: 3.500 UF ")
         piso = user_input("Ingrese el número del piso (1 al 10): ", piso=True)
-        tipo = user_input("Ingrese el tipo de piso: ", tipo=True)
+        tipo = user_input("Ingrese el tipo de piso (A, B, C, D): ", tipo=True)
         
         #Utilización de la función ord(), lo que hace básicamente es devolver el valor numérico correspondiente al código Unicode de un carácter.
         tipo = ord(tipo)
